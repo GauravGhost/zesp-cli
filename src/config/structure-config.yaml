@@ -1,0 +1,29 @@
+language: node
+structure:
+
+  # Controller File
+  controller:
+    location: src/controller
+    file:
+      bookingController:
+        - booking
+        - booking.status
+        - booking.confirm
+        - booking.cancel
+        - confirm.booking
+      seatController:
+        - available
+        - not.available
+
+      # Service File
+  service:
+    location: src/service
+    file:
+      bookingService:
+        - booking
+        - booking.status
+        - booking.confirm
+        - booking.cancel
+      seatService:
+        - available
+        - not.available

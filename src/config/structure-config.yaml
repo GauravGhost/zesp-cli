@@ -3,7 +3,7 @@ structure:
 
   # Controller File
   controller:
-    location: src/controller
+    location: lib/controller
     file:
       bookingController:
         - booking
@@ -17,7 +17,7 @@ structure:
 
       # Service File
   service:
-    location: src/service
+    location: lib/service
     file:
       bookingService:
         - booking

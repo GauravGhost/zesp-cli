@@ -19,7 +19,7 @@ const createFile = (filePath, fileData = '') => {
 // Function to load yaml configuration
 const yamlFile = (filePath) => {
     const defaultFilePath = path.join(__dirname, "..", "/config", 'structure-config.yaml');
-    const configPath = filePath || fs.readFileSync(defaultFilePath);
+    const configPath = fs.readFileSync(filePath || defaultFilePath);
     return yaml.load(configPath);
 }
 

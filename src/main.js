@@ -1,9 +1,12 @@
 const { Node } = require('./core');
-const { yamlFile } = require('./helper/fs-helper')
+const {  setProperties, getLanguage } = require('./helper/config-helper');
+const { yamlFile } = require('./helper/fs-helper');
+const store = require('./utils/global-store');
 
 function templateHandler() {
-    const yaml = yamlFile();
-    if (yaml.language == "node") {
+    setProperties();
+    const language = getLanguage();
+    if (language == "node") {
         Node.template(yamlFile().structure);
     } else {
         console.log("language not supported");

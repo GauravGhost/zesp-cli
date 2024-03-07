@@ -7,8 +7,8 @@ const store = require('./utils/global-store');
 function templateHandler() {
     setProperties();
     const language = getLanguage();
-    if (language.toLowerCase() == NODE) {
-        Node.template(yamlFile().structure);
+    if (language.toLowerCase() === NODE) {
+        Node.handler();
     } else {
         console.log("language not supported");
     }

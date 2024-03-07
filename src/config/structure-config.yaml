@@ -27,3 +27,6 @@ structure:
       seatService:
         - available
         - not.available
+config:
+  # Method [template, structure]
+  method: template

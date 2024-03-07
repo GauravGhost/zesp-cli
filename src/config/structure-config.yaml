@@ -1,6 +1,6 @@
 language: node
-structure:
 
+structure:
   # Controller File
   controller:
     location: lib/controller
@@ -27,6 +27,9 @@ structure:
       seatService:
         - available
         - not.available
+
 config:
-  # Method [template, structure]
-  method: template
+  # Method [template, structure] -> Default Structure
+  method: template,
+  # Case [camel, pascal] -> Default Camel.
+  case: camel

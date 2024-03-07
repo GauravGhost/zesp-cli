@@ -5,7 +5,6 @@ const dummyTemplate = (props, layerName, file) => {
     for (const [key, value] of Object.entries(props)) {
         file = file.replace(`{${key}}`, value);
     }
-    console.log(file);
     return file;
 }
 
